@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.example.hcl.service.fibonacci</OriginalElement>
+  <nodes>
+    <node x="0.0" y="304.0">com.example.hcl.service.fibonacci.Fibonacci</node>
+    <node x="0.0" y="228.0">com.example.hcl.service.fibonacci.ErrorController</node>
+    <node x="0.0" y="152.0">com.example.hcl.service.fibonacci.FibonacciController</node>
+    <node x="0.0" y="76.0">com.example.hcl.service.fibonacci.FibonacciCalculator</node>
+    <node x="195.0" y="228.0">com.example.hcl.service.fibonacci.FibonacciLong</node>
+    <node x="0.0" y="0.0">com.example.hcl.service.fibonacci.FibonacciRepository</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="171.5" y="167.5" />
+  <SelectedNodes>
+    <node>com.example.hcl.service.fibonacci.Fibonacci</node>
+    <node>com.example.hcl.service.fibonacci.ErrorController</node>
+    <node>com.example.hcl.service.fibonacci.FibonacciController</node>
+    <node>com.example.hcl.service.fibonacci.FibonacciCalculator</node>
+    <node>com.example.hcl.service.fibonacci.FibonacciLong</node>
+    <node>com.example.hcl.service.fibonacci.FibonacciRepository</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
