@@ -2,7 +2,10 @@ package com.example.hcl.service.fibonacci;//package com.example.hcl.service.demo
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import java.math.BigInteger;
+
+// TODO: add delete by value
+// TODO: add get by value
+// TODO: add update value by id
 
 /**
  * Class defining an element in a Fibonacci series
@@ -16,17 +19,23 @@ public class FibonacciLong {
     private Integer id;
 
     // value as a result of the given position
-//    private BigInteger value;
     private long value;
 
     public FibonacciLong() {
-//        this(-1, BigInteger.valueOf(-1));
-//        this(-1, BigInteger.valueOf(-1));
         this(-1, -1);
+    }
+
+    public FibonacciLong(Integer id, long value) {
+        this.id = id;
+        this.value = value;
     }
 
     public Integer getId() {
         return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     @Override
@@ -37,34 +46,11 @@ public class FibonacciLong {
                 '}';
     }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-//    public BigInteger getValue() {
-//        return value;
-//    }
-
-    //    public Integer getValue() {
-//        return value;
-//    }
     public long getValue() {
         return value;
     }
 
-//    public void setValue(BigInteger value) {
-//        this.value = value;
-//    }
-
-    //    public void setValue(Integer value) {
-//        this.value = value;
-//    }
     public void setValue(long value) {
-        this.value = value;
-    }
-
-    public FibonacciLong(Integer id, long value) {
-        this.id = id;
         this.value = value;
     }
 

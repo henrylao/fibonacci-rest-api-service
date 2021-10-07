@@ -1,6 +1,15 @@
 DROP TABLE IF EXISTS FIBONACCI_TABLE;
 
-CREATE TABLE FIBONACCI_TABLE (
-                               id INT   PRIMARY KEY,
-                               value BIGINT(255)
+CREATE TABLE FIBONACCI
+(
+    id    INT PRIMARY KEY,
+    value BIGINT(255)
+);
+
+DROP TABLE IF EXISTS PRIME;
+
+CREATE TABLE PRIME
+(
+    id    INT PRIMARY KEY,
+    value BIGINT(255)
 );

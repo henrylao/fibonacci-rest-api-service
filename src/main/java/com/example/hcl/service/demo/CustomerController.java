@@ -1,8 +1,10 @@
 package com.example.hcl.service.demo;//package com.example.springboottutorial;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs;
 import org.springframework.web.bind.annotation.*;
 
+@AutoConfigureRestDocs(outputDir = "target/snippets")
 @RestController
 public class CustomerController {
 

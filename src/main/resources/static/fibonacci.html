@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Fibonacci Application</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<form action="/api/v1/fibonacci/add/" method="POST">
+    <p>Let's add a Fibonacci.</p>
+
+    <div>
+        <label for="id">Fibonacci:</label>
+        <input id="id" name="id" value=0>
+    </div>
+    <button>Add</button>
+    <button formaction="api/v1/fibonacci/get/" formmethod="get">View At Index</button>
+    </div>
+</form>
+
+<form action="api/v1/fibonacci/get/all" method="GET">
+    <button>List Series</button>
+</form>
+</body>
+</html>

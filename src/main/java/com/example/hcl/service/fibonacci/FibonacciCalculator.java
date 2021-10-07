@@ -9,16 +9,15 @@ import java.util.HashMap;
  */
 public class FibonacciCalculator {
     //        implements Callable<BigInteger> {
-    private int position;
-
-    public HashMap<Integer, BigInteger> getMemo() {
-        return memo;
-    }
-
-    private HashMap<Integer, BigInteger> memo = new HashMap<>();
+    private final int position;
+    private final HashMap<Integer, BigInteger> memo = new HashMap<>();
 
     public FibonacciCalculator(int position) {
         this.position = position;
+    }
+
+    public HashMap<Integer, BigInteger> getMemo() {
+        return memo;
     }
 
     // runs extremely slow when n = 100, why?

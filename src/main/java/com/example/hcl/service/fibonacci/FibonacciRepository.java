@@ -1,9 +1,6 @@
 package com.example.hcl.service.fibonacci;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-//import org.springframework.data.repository.CrudRepository;
-
-//public interface FibonacciRepository extends CrudRepository<Fibonacci, Integer> {
 
 /**
  * Interface declaring methods for interacting with the database
@@ -15,7 +12,4 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * </ul>
  */
 public interface FibonacciRepository extends JpaRepository<Fibonacci, Integer> {
-//    Fibonacci findFibonacciById(Integer id);
-//    void deleteById(Integer id);
-//    void deleteAll();
 }

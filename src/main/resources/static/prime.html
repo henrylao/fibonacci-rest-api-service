@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Prime Application</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<form action="/api/v1/prime/add/" method="POST">
+    <p>Enter in an integer </p>
+
+    <div>
+        <label for="input">Integer input:</label>
+        <input id="input" name="input" value=0>
+    </div>
+    <!--    <label for="firstName">First name:</label>-->
+    <!--    <input name="first" id="firstName" value="Homer">-->
+    <!--  </div>-->
+    <!--  <div>-->
+    <!--    <label for="lastName">Last name:</label>-->
+    <!--    <input name="last" id="lastName" value="Simpson">-->
+    <!--  </div>-->
+    <!--  <div>-->
+    <button>Add</button>
+    <button formaction="api/v1/prime/get/" formmethod="get">View At Index</button>
+    <button formaction="api/v1/prime/valid/" formmethod="post">Is Prime</button>
+    </div>
+</form>
+
+<form action="api/v1/prime/get/all" method="GET">
+    <button>List primes</button>
+</form>
+</body>
+</html>

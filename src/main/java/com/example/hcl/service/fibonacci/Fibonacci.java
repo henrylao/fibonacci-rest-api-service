@@ -4,19 +4,12 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
 
 /**
  * Class defining an element in a Fibonacci series
  */
 @Entity
-@Table(name="fibonacci")
+@Table(name = "fibonacci")
 public class Fibonacci {
     public static final String DEBUG = "Fibonacci: ";
 
@@ -29,6 +22,11 @@ public class Fibonacci {
 
     public Fibonacci() {
         this(-1, BigInteger.valueOf(-1));
+    }
+
+    public Fibonacci(Integer id, BigInteger value) {
+        this.id = id;
+        this.value = value;
     }
 
     public Integer getId() {
@@ -44,11 +42,6 @@ public class Fibonacci {
     }
 
     public void setValue(BigInteger value) {
-        this.value = value;
-    }
-
-    public Fibonacci(Integer id, BigInteger value) {
-        this.id = id;
         this.value = value;
     }
 
